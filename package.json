@@ -1,8 +1,8 @@
 {
-  "name": "orison-example",
+  "name": "whipo",
   "version": "1.0.0",
-  "description": "An example Orison project setup for GitHub pages.",
-  "main": "orison.js",
+  "description": "Quickly whip up server side rendered web applications",
+  "main": "",
   "dependencies": {
     "orison": "^1.0.0"
   },

@@ -1,9 +1,15 @@
-# Example Orison Site Using Github Pages
+# Whipo Docs
 
 ## Install
 
 ```
 npm install
+```
+
+## Serve
+
+```
+npm run serve
 ```
 
 ## Build

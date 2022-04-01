@@ -1,7 +1,7 @@
 {
-  "name": "OrisonJS",
-  "short_name": "OrisonJS",
-  "description": "Orison server and static stite generator documentation",
+  "name": "Whipo",
+  "short_name": "Whipo",
+  "description": "Quickly whip up server side rendered web applications",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#fa5d0f",

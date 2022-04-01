@@ -1,12 +1,34 @@
-## Getting Started
+## Get started
 
-### Make changes
+```js
+nvm use 16
+npm install whipo --global
+whipo init my-app
+cd my-app
+npm install
+npm start
+```
 
-1. Make changes under /src based upon the [OrisonJS documentation](https://orison.alexlockhart.me)
-1. Build the changes to /docs with `npm run build`
-1. Test your changes by running `npm run serve` and going to localhost:3000
+Open [localhost:5000](http://localhost:5000/)
 
-### Deploy
+## Other CLI Options
 
-1. Push the changes to a Github repo.
-1. Setup that Github repo to use Github Pages for hosting.
+| Option             | Alias  | Description | Default |
+| ------------------ | ------ | ----------- | ------- |
+| `--service-worker` | `--sw` | Include a service worker in the generated project | `false` |
+| `--api-keys`       | `--ak` | Include a gitignored env file for api keys        | `false` |
+
+## API Keys
+
+If you need access to API keys, move the `stub.env.js` file to `.env.js` and fill this file with the keys.
+Then, import this file anywhere under src/server as shown below.
+
+```js
+import env from '../../.env.js';
+```
+
+## Support
+
+[Buy me a coffee](https://www.buymeacoffee.com/alexlockhart)
+
+[Patreon](https://www.patreon.com/alexlockhart)

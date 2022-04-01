@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Whipo</title>
+    <meta name="description" content="Quickly whip up server side rendered web applications">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="/app.css">
+
+    <link rel="icon" href="/icons/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#137a13">
+
+    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="RPR">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="RPR">
+
+    <!-- Homescreen icons -->
+    <link rel="apple-touch-icon" href="/icons/icon-64x64.png">
+    <link rel="apple-touch-icon" sizes="64x64" href="/icons/icon-inverted-64x64.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="/icons/icon-inverted-128x128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-inverted-256x256.png">
+
+    <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="/icons/icon-128x128.png">
+    <meta name="msapplication-TileColor" content="#137a13">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Default twitter cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@username">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Whipo">
+    <meta property="og:image" content="/icons/icon-inverted-256x256.png" />
+  </head>
+  <body>
+    
+  <header>
+    <h1>Whipo <img src="/icons/icon-64x64.png"></h1>
+    <p>Quickly whip up server side rendered web applications using express and template literals.</p>
+  </header>
+
+    <main>
+      
+  <section><h2>Get started</h2>
+<pre><code class="language-js">nvm use 16
+npm install whipo --global
+whipo init my-app
+cd my-app
+npm install
+npm start
+</code></pre>
+<p>Open <a href="http://localhost:5000/">localhost:5000</a></p>
+<h2>Other CLI Options</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Alias</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--service-worker</code></td>
+<td><code>--sw</code></td>
+<td>Include a service worker in the generated project</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>--api-keys</code></td>
+<td><code>--ak</code></td>
+<td>Include a gitignored env file for api keys</td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h2>API Keys</h2>
+<p>If you need access to API keys, move the <code>stub.env.js</code> file to <code>.env.js</code> and fill this file with the keys.
+Then, import this file anywhere under src/server as shown below.</p>
+<pre><code class="language-js">import env from '../../.env.js';
+</code></pre>
+<h2>Support</h2>
+<p><a href="https://www.buymeacoffee.com/alexlockhart">Buy me a coffee</a></p>
+<p><a href="https://www.patreon.com/alexlockhart">Patreon</a></p>
+</section>
+
+    </main>
+    
+  <footer>
+    <p>Built with the OrisonJS Starter Kit</p>
+    <p><a href="https://www.flaticon.com/free-icons/whisk" title="whisk icons">Whisk icons created by Freepik - Flaticon</a></p>
+    <p><a href="https://www.alexlockhart.me/">Alex Lockhart</a></p>
+    <p><a href="https://github.com/megazear7/whipo-docs">GitHub</a></p>
+    <p><a href="https://www.npmjs.com/package/whipo">NPM</a></p>
+  </footer>
+
+  </body>
+</html>

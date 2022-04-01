@@ -1,0 +1,44 @@
+
+  <section><h2>Get started</h2>
+<pre><code class="language-js">nvm use 16
+npm install whipo --global
+whipo init my-app
+cd my-app
+npm install
+npm start
+</code></pre>
+<p>Open <a href="http://localhost:5000/">localhost:5000</a></p>
+<h2>Other CLI Options</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Alias</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--service-worker</code></td>
+<td><code>--sw</code></td>
+<td>Include a service worker in the generated project</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>--api-keys</code></td>
+<td><code>--ak</code></td>
+<td>Include a gitignored env file for api keys</td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h2>API Keys</h2>
+<p>If you need access to API keys, move the <code>stub.env.js</code> file to <code>.env.js</code> and fill this file with the keys.
+Then, import this file anywhere under src/server as shown below.</p>
+<pre><code class="language-js">import env from '../../.env.js';
+</code></pre>
+<h2>Support</h2>
+<p><a href="https://www.buymeacoffee.com/alexlockhart">Buy me a coffee</a></p>
+<p><a href="https://www.patreon.com/alexlockhart">Patreon</a></p>
+</section>
